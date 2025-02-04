@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background: linear-gradient(135deg, #6A1B9A, #8E24AA);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+input, button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #8E24AA;
+}
+
+button {
+    background: linear-gradient(135deg, #6A1B9A, #8E24AA);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #8E24AA;
+}

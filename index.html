@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsLive - Non-Stop Sports Action</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jwplayer.com/libraries/SAHhwvZq.js"></script>
+</head>
+<body>
+    <div class="welcome-screen">
+        <h1>Welcome to SportsLive</h1>
+        <p>Your Gateway to Non-Stop Sports Action!</p>
+        <button onclick="navigateToInput()">Start Streaming</button>
+    </div>
+
+    <div class="input-page" style="display:none;">
+        <input type="text" id="streamURL" placeholder="Enter DASH (.mpd) or HLS (.m3u8) URL" oninput="validateStreamURL()">
+        <div id="drmFields" style="display:none;">
+            <input type="text" id="keyID" placeholder="Key ID">
+            <input type="text" id="key" placeholder="Key">
+        </div>
+        <button onclick="playStream()">Play Stream</button>
+    </div>
+
+    <div id="player" style="display:none;"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
